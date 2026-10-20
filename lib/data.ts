@@ -1,12 +1,12 @@
 export const profile = {
-  name: "JSenpai",
+  name: "Jason Sianandar",
   role: "Full Stack Developer",
   headline: "Impactful Solutions.",
   location: "Indonesia",
   years: 4,
-  email: "hello@moncode.id", // TODO: replace with your real email
-  linkedin: "https://www.linkedin.com/in/your-handle", // TODO
-  github: "https://github.com/your-handle", // TODO
+  email: "sianandarjason@gmail.com", // TODO: replace with your real email
+  linkedin: "https://www.linkedin.com/in/jason-sianandar-1a9a40202/", // TODO
+  github: "https://github.com/JSianandar", // TODO
   cv: "/JSenpai-CV.pdf", // put your CV in /public with this name
   intro: [
     "I'm a Full Stack Developer with 4 years of experience building fast, scalable web applications across the finance and IoT industries.",
@@ -23,7 +23,10 @@ export const nav = [
   { id: "contact", label: "Contact" },
 ];
 
-export const skills: { group: string; items: { name: string; core?: boolean }[] }[] = [
+export const skills: {
+  group: string;
+  items: { name: string; core?: boolean }[];
+}[] = [
   {
     group: "Frontend Architecture",
     items: [
@@ -46,11 +49,20 @@ export const skills: { group: string; items: { name: string; core?: boolean }[] 
   },
   {
     group: "IoT & Integrations",
-    items: [{ name: "MQTT", core: true }, { name: "Realtime Dashboards" }, { name: "WebSockets" }],
+    items: [
+      { name: "MQTT", core: true },
+      { name: "Realtime Dashboards" },
+      { name: "WebSockets" },
+    ],
   },
   {
     group: "Product & Tooling",
-    items: [{ name: "Git" }, { name: "Figma" }, { name: "Agile (Scrum/Kanban)" }, { name: "CI/CD" }],
+    items: [
+      { name: "Git" },
+      { name: "Figma" },
+      { name: "Agile (Scrum/Kanban)" },
+      { name: "CI/CD" },
+    ],
   },
 ]; // TODO: adjust to your real stack
 
@@ -77,7 +89,9 @@ export const experience = [
     role: "Web Developer",
     company: "Finance Company", // TODO
     period: "2022 – 2023",
-    points: ["Developed customer-facing finance features with strict compliance requirements."],
+    points: [
+      "Developed customer-facing finance features with strict compliance requirements.",
+    ],
   },
 ]; // TODO: replace with your real work history
 
@@ -88,10 +102,22 @@ export const moncode = {
   description:
     "Moncode is my freelance web development brand, helping businesses and brands launch fast, polished and scalable websites and web apps.",
   services: [
-    { title: "Landing Pages", text: "Conversion-focused, responsive one-pagers." },
-    { title: "Company Websites", text: "Professional sites that tell your brand story." },
-    { title: "Web Apps", text: "Dashboards, internal tools and custom systems." },
-    { title: "Performance & SEO", text: "Fast loads, clean code, found on search." },
+    {
+      title: "Landing Pages",
+      text: "Conversion-focused, responsive one-pagers.",
+    },
+    {
+      title: "Company Websites",
+      text: "Professional sites that tell your brand story.",
+    },
+    {
+      title: "Web Apps",
+      text: "Dashboards, internal tools and custom systems.",
+    },
+    {
+      title: "Performance & SEO",
+      text: "Fast loads, clean code, found on search.",
+    },
   ],
   stats: [
     { label: "Projects shipped", value: 10, suffix: "+" }, // TODO
