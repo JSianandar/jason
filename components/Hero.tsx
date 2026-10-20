@@ -5,17 +5,56 @@ import { profile } from "@/lib/data";
 
 // The capsule stack echoes the shared palette image.
 const capsules = [
-  { label: "Next.js", bg: "bg-navy-900", fg: "text-white", hex: "#161E2F", ml: "0%" },
-  { label: "TypeScript", bg: "bg-navy-800", fg: "text-white", hex: "#242F49", ml: "8%" },
-  { label: "IoT & Realtime", bg: "bg-navy-700", fg: "text-white", hex: "#384358", ml: "2%" },
-  { label: "Fintech", bg: "bg-peach", fg: "text-navy-900", hex: "#FFA586", ml: "12%" },
-  { label: "Moncode", bg: "bg-crimson", fg: "text-white", hex: "#B51A2B", ml: "4%" },
-  { label: "Node.js", bg: "bg-wine", fg: "text-white", hex: "#541A2E", ml: "10%" },
+  {
+    label: "Next.js",
+    bg: "bg-navy-900",
+    fg: "text-white",
+    hex: "#161E2F",
+    ml: "0%",
+  },
+  {
+    label: "TypeScript",
+    bg: "bg-navy-800",
+    fg: "text-white",
+    hex: "#242F49",
+    ml: "8%",
+  },
+  {
+    label: "IoT & Realtime",
+    bg: "bg-navy-700",
+    fg: "text-white",
+    hex: "#384358",
+    ml: "2%",
+  },
+  {
+    label: "Fintech",
+    bg: "bg-peach",
+    fg: "text-navy-900",
+    hex: "#FFA586",
+    ml: "12%",
+  },
+  {
+    label: "Moncode",
+    bg: "bg-crimson",
+    fg: "text-white",
+    hex: "#B51A2B",
+    ml: "4%",
+  },
+  {
+    label: "Node.js",
+    bg: "bg-wine",
+    fg: "text-white",
+    hex: "#541A2E",
+    ml: "10%",
+  },
 ];
 
 export default function Hero() {
   return (
-    <section id="home" className="relative flex min-h-screen items-center overflow-hidden pt-28 pb-16">
+    <section
+      id="home"
+      className="relative flex min-h-screen items-center overflow-hidden pt-28 pb-16"
+    >
       <div className="dot-grid pointer-events-none absolute inset-0" />
       <div className="pointer-events-none absolute -left-32 top-1/3 h-80 w-80 rounded-full bg-hot/25 blur-3xl animate-drift" />
       <div className="pointer-events-none absolute -right-24 bottom-10 h-96 w-96 rounded-full bg-accent/20 blur-3xl animate-drift [animation-delay:-7s]" />
@@ -45,7 +84,8 @@ export default function Hero() {
             transition={{ delay: 0.15, duration: 0.7 }}
             className="mt-3 font-display text-5xl leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl"
           >
-            I build <em className="text-accent">reliable</em> web products, end to end.
+            I build <em className="text-accent">reliable</em> web products, end
+            to end.
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -67,7 +107,10 @@ export default function Hero() {
               className="group flex items-center gap-2 rounded-full bg-accent px-7 py-3.5 font-semibold text-on transition hover:-translate-y-0.5"
             >
               Let&apos;s talk
-              <ArrowUpRight size={18} className="transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+              <ArrowUpRight
+                size={18}
+                className="transition group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+              />
             </a>
             <a
               href={profile.cv}
@@ -103,7 +146,11 @@ export default function Hero() {
               key={c.label}
               initial={{ opacity: 0, x: 80 }}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.3 + i * 0.1, duration: 0.6, ease: "easeOut" }}
+              transition={{
+                delay: 0.3 + i * 0.1,
+                duration: 0.6,
+                ease: "easeOut",
+              }}
               style={{ marginLeft: c.ml, zIndex: i }}
               className="relative -mt-3 first:mt-0"
             >
@@ -112,7 +159,7 @@ export default function Hero() {
                 style={{ animationDelay: `${i * 0.45}s` }}
               >
                 <span className="font-display text-xl italic">{c.label}</span>
-                <span className="font-mono text-[10px] opacity-60">{c.hex}</span>
+                {/* <span className="font-mono text-[10px] opacity-60">{c.hex}</span> */}
               </div>
             </motion.div>
           ))}
