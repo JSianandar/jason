@@ -3,14 +3,14 @@ export const profile = {
   role: "Full Stack Developer",
   headline: "Impactful Solutions.",
   location: "Indonesia",
-  years: 4,
+  years: 3,
   email: "sianandarjason@gmail.com", // TODO: replace with your real email
   linkedin: "https://www.linkedin.com/in/jason-sianandar-1a9a40202/", // TODO
   github: "https://github.com/JSianandar", // TODO
   cv: "/JSenpai-CV.pdf", // put your CV in /public with this name
   intro: [
-    "I'm a Full Stack Developer with 4 years of experience building fast, scalable web applications across the finance and IoT industries.",
-    "I don't just write code to clear tickets. I build systems that drive change, from approval workflows to dashboards and client-facing sites, with a focus on real-world impact.",
+    "I'm a Full Stack Developer with 3+ years of experience turning ideas into fast, reliable web products, from finance and IoT platforms to websites for clients in all kinds of industries.",
+    "I care about the outcome, not just the code: workflows that save people time, dashboards that make data clear, and sites that do their job well.",
   ],
 };
 
@@ -36,15 +36,50 @@ export const skills: {
       { name: "Vue.js" },
       { name: "Tailwind CSS" },
       { name: "React Query" },
+      { name: "React Native" },
     ],
+  },
+  {
+    group: "Web Fundamentals",
+    items: [
+      { name: "JavaScript", core: true },
+      { name: "HTML5", core: true },
+      { name: "CSS" },
+      { name: "jQuery" },
+      { name: "Responsive design" },
+      { name: "Cross-browser compatibility" },
+    ],
+  },
+  {
+    group: "Languages",
+    items: [{ name: "PHP", core: true }, { name: "Python" }, { name: "Java" }],
   },
   {
     group: "Backend & Systems",
     items: [
       { name: "Node.js", core: true },
+      { name: "Laravel", core: true },
+      { name: "Express.js" },
+      { name: "Springboot" },
+      { name: "CodeIgniter" },
       { name: "REST APIs" },
       { name: "PostgreSQL" },
       { name: "MySQL" },
+      { name: "MongoDB" },
+      { name: "Linux" },
+      { name: "Amazon Web Services" },
+    ],
+  },
+
+  {
+    group: "Product & Tooling",
+    items: [
+      { name: "Git", core: true },
+      { name: "Version control" },
+      { name: "Docker" },
+      { name: "Debugging" },
+      { name: "Figma" },
+      { name: "CI/CD" },
     ],
   },
   {
@@ -55,45 +90,64 @@ export const skills: {
       { name: "WebSockets" },
     ],
   },
-  {
-    group: "Product & Tooling",
-    items: [
-      { name: "Git" },
-      { name: "Figma" },
-      { name: "Agile (Scrum/Kanban)" },
-      { name: "CI/CD" },
-    ],
-  },
-]; // TODO: adjust to your real stack
+];
 
 export const experience = [
   {
-    role: "Full Stack Developer",
-    company: "Your Current Company", // TODO
-    period: "2023 – Present",
+    role: "Full-Stack Developer",
+    company: "PT Generasi Paham Investasi (Ayovest), Jakarta",
+    period: "Jan 2025 – Present",
     points: [
-      "Built the frontend approval flow (OA) used across internal teams.",
-      "Improved performance and maintainability of the web platform.",
+      "Built a approval flow (OA) that handles enabling, modifying and disabling items, working to QA specifications.",
+      "Translated Figma UI/UX designs into responsive web applications using Next.js, Vue.js and React.js.",
+      "Built and maintained back-end systems for Indonesia's financial services ecosystem with Java and MySQL.",
+      "Developed and enhanced the Ayovest mobile app using React Native.",
+      "Integrated third-party APIs to extend functionality and improve the user experience.",
+      "Worked with cross-functional teams, delegating tasks and keeping everyone aligned through ClickUp and Jira.",
     ],
   },
   {
-    role: "Frontend / IoT Developer",
-    company: "Previous Company", // TODO
-    period: "2022 – 2023",
+    role: "Software / Front-End Developer",
+    company: "PT Inovasi Otomasi Teknologi, Jakarta",
+    period: "Jul 2023 – Jan 2025",
     points: [
-      "Built realtime IoT dashboards for monitoring devices.",
-      "Collaborated with hardware and backend teams on data pipelines.",
+      "Engineered responsive interfaces that work across devices, improving accessibility and user engagement for client applications.",
+      "Built custom dashboards, from paperless e-forms to monitoring dashboards, including OEE (Overall Equipment Effectiveness) dashboards.",
+      "Worked mainly with React.js on the front end, Laravel on the back end and MySQL for the database.",
+      "Deployed applications on Linux, Docker and AWS.",
     ],
   },
   {
-    role: "Web Developer",
-    company: "Finance Company", // TODO
-    period: "2022 – 2023",
+    role: "Front-End Engineer Specialist (Internship)",
+    company: "Your Company Name, Jakarta", // TODO: add company name
+    period: "Aug 2021 – Feb 2022",
     points: [
-      "Developed customer-facing finance features with strict compliance requirements.",
+      "Translated UI/UX designs into responsive web applications.",
+      "Built pages for the product's landing page and dashboard.",
+      "Implemented API requests for the product.",
+      "Tech used: React.js, Next.js and SCSS.",
     ],
   },
-]; // TODO: replace with your real work history
+  {
+    role: "Front-End Developer",
+    company: "Ninety Seven Web Developer",
+    period: "Apr 2021 – Aug 2021", // TODO: add your dates
+    points: [
+      "Built the front end of websites and desktop apps with ReactJS.",
+      "Worked with MongoDB for the API and implemented API requests for the product.",
+    ],
+  },
+  {
+    role: "Mobile Application Developer (Internship)",
+    company: "Your Company Name, Jakarta", // TODO: add company name
+    period: "Feb 2021 – May 2021",
+    points: [
+      "Developed and implemented a mobile app prototype based on client requirements.",
+      "Gained working knowledge of the healthcare system and its needs.",
+      "Built with Dart and Flutter, supported by Android Studio.",
+    ],
+  },
+];
 
 export const moncode = {
   name: "Moncode",
@@ -120,9 +174,9 @@ export const moncode = {
     },
   ],
   stats: [
-    { label: "Projects shipped", value: 10, suffix: "+" }, // TODO
-    { label: "Years building", value: 4, suffix: "" },
-    { label: "Happy clients", value: 8, suffix: "+" }, // TODO
+    { label: "Projects shipped", value: 4, suffix: "+" }, // TODO
+    { label: "Years building", value: 1, suffix: "" },
+    { label: "Happy clients", value: 3, suffix: "+" }, // TODO
   ],
 };
 

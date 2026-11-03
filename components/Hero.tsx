@@ -41,7 +41,7 @@ const capsules = [
     ml: "4%",
   },
   {
-    label: "Node.js",
+    label: "Full-stack Development",
     bg: "bg-wine",
     fg: "text-white",
     hex: "#541A2E",
@@ -129,8 +129,8 @@ export default function Hero() {
           >
             {[
               [`${profile.years}+`, "Years building"],
-              ["2", "Industries"],
-              ["1", "Studio founded"],
+              ["5+", "Industries"],
+              ["1", "Studio co-founded"],
             ].map(([n, l]) => (
               <div key={l}>
                 <dt className="font-display text-3xl text-accent">{n}</dt>
